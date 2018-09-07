@@ -18,13 +18,14 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
-  display: 'flex';
-  flex-direction: 'column';
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.App-deps {
+  font-size: xx-large;
+  display: grid;
+  gap: 30px;
+  padding: 30px;
 }

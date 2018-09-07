@@ -15,7 +15,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">{config.title}</h1>
         </header>
-        <div className="App-intro">
+        <div className="App-deps">
           {config.dependencies.map(d => (
             <Dependency key={d.name} dependency={d} ostype={getPlatform(window.navigator.platform, this.state.assume32bit)} serverUrl={config.serverUrl} />
           ))}
