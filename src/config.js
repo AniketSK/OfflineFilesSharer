@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
-
 export default {
   title: "Deepti's React Workshop",
+  serverUrl:"192.168.1.2:9001",
   dependencies: [
     {
       name: "node",
@@ -21,4 +20,3 @@ export default {
     }
   ]
 };
-

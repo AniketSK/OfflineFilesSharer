@@ -14,7 +14,7 @@ class App extends Component {
         </header>
         <div className="App-intro">
           {config.dependencies.map(d => (
-            <Dependency key={d.name} dependency={d} ostype={"linux64"} />
+            <Dependency key={d.name} dependency={d} ostype={"linux64"} serverUrl={config.serverUrl} />
           ))}
         </div>
       </div>
