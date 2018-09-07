@@ -6,6 +6,7 @@ import Dependency from "./Dependency";
 import getPlatform from "./PlatformIdentifier"
 
 class App extends Component {
+  state ={assume32bit : true}
   render() {
     return (
       <div className="App">
@@ -15,7 +16,7 @@ class App extends Component {
         </header>
         <div className="App-intro">
           {config.dependencies.map(d => (
-            <Dependency key={d.name} dependency={d} ostype={getPlatform()} serverUrl={config.serverUrl} />
+            <Dependency key={d.name} dependency={d} ostype={getPlatform(window.navigator.platform, this.state.assume32bit)} serverUrl={config.serverUrl} />
           ))}
         </div>
       </div>
