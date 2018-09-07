@@ -4,9 +4,10 @@ import "./App.css";
 import config from "../config";
 import Dependency from "./Dependency";
 import getPlatform from "./PlatformIdentifier"
+const arch = require("arch")
 
 class App extends Component {
-  state ={assume32bit : true}
+  state ={assume32bit : arch() === 'x86'}
   render() {
     return (
       <div className="App">
