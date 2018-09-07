@@ -1,6 +1,10 @@
-An index of files that you might want to locally store and serve to the attendees of your workshop.
-Edit config.js to enter your information.
+An index of files that you might want to locally store and serve to the attendees of your workshop. In all the variations that you'd need to support multiple OS's and CPU architectures.
+
+![Screenshot of node and vscode for a react workshop. The local url to the files is visible](https://image.ibb.co/fV940K/Screenshot_20180907_204252.png)
+## Edit config.js to enter your information.
 Required files should be under the folder 'dependencies' with their folder names as 'name' under the dependency in config.js
+
+
 Here's an example config:
 ```
 {
@@ -20,6 +24,7 @@ Here's an example config:
 ```
 
 This expects a folder structure of:
+
 ```
 root/
     dependencies/
