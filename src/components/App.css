@@ -26,6 +26,7 @@
 .App-deps {
   font-size: xx-large;
   display: grid;
-  gap: 30px;
+  gap: 50px;
   padding: 30px;
+  grid-template-columns: auto auto auto auto;
 }
