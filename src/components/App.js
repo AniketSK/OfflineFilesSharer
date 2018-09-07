@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import config from "../config";
 import Dependency from "./Dependency";
+import getPlatform from "./PlatformIdentifier"
 
 class App extends Component {
   render() {
@@ -14,7 +15,7 @@ class App extends Component {
         </header>
         <div className="App-intro">
           {config.dependencies.map(d => (
-            <Dependency key={d.name} dependency={d} ostype={"linux64"} serverUrl={config.serverUrl} />
+            <Dependency key={d.name} dependency={d} ostype={getPlatform()} serverUrl={config.serverUrl} />
           ))}
         </div>
       </div>
