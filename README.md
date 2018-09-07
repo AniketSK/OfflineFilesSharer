@@ -19,8 +19,8 @@ Here's an example config:
 }
 ```
 
-```
 This expects a folder structure of:
+```
 root/
     dependencies/
                 node/
@@ -33,5 +33,6 @@ root/
 ```
 
 All you'd need to is change the values in config.js and download files to the right place.
+
 Then start the server with:
-npm start
+```npm start```
