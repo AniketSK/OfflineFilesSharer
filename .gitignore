@@ -1,5 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# Served files, these will be downloaded and replaced frequently so
+# the entire folder should be ignored.
+dependencies
+
 # dependencies
 /node_modules
 
