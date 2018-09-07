@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import config from '../config'
-import Dependency from './Dependency';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import config from "../config";
+import Dependency from "./Dependency";
 
 class App extends Component {
   render() {
